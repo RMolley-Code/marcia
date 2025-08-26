@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chef Portfolio — Marcia Mzimela</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio website for a professional chef: specialties, menu highlights, experience, and contact." />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">👨‍🍳</span>
+        <span class="brand-text">Chef Marcia</span>
+      </a>
+
+      <!-- Mobile Nav Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open Navigation" />
+      <label class="hamburger" for="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn btn-primary">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <!-- Swap this poster image and video sources with your own -->
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+        <source src="images/Landing.mp4" type="video/mp4" />
+        <!-- If video can't load, the background image + text still shows -->
+      </video>
+
+      <div class="container hero-content">
+        <h1></h1>
+        <p></p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">View Signature Dishes</a>
+          <a href="#contact" class="btn btn-ghost">Book a Tasting</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="stack">
+          <h2>About the Chef</h2>
+          <p>
+            I’m <strong>Marcia</strong>, a chef with a passion for seasonal produce, bold flavors,
+            and meticulously balanced plates. Trained in classical technique and influenced by global cuisines,
+            I design menus that feel intimate, modern, and unforgettable.
+          </p>
+          <ul class="list-bullets">
+            <li>10+ years in fine dining & private events</li>
+            <li>Farm-to-table & zero-waste philosophy</li>
+            <li>Menu engineering & kitchen leadership</li>
+          </ul>
+          <div class="actions">
+            <a href="assets/Chef-YourName-Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download Résumé</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/pan cake.jfif" alt="Chef Your Name plating a dish" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties -->
+    <section id="specialties" class="section section-alt">
+      <div class="container">
+        <h2>Specialties</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="images/4f0352a8-6e07-4f72-9b89-f67913daf228.jfif" alt="Handmade pasta with seasonal garnish" />
+            <div class="card-body">
+              <h3>Handmade Pasta</h3>
+              <p>Silky textures, rich reductions, and seasonal pairings made fresh daily.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/c5509d8e-f0fb-4797-963f-d52af2212ea3.jfif" alt="Seafood tasting dish on a stone plate" />
+            <div class="card-body">
+              <h3>Seafood Tasting</h3>
+              <p>Line-caught fish, delicate broths, and citrus notes that brighten each bite.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/9babdef7-e415-4c7b-a376-73de51b3ace8.jfif" alt="Artisanal dessert with chocolate and berries" />
+            <div class="card-body">
+              <h3>Modern Pastry</h3>
+              <p>Refined desserts with attention to texture, temperature, and balance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Menu Highlights</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Burrata & Heirloom Tomato</h3>
+            <p>Cold-pressed basil oil, aged balsamic, toasted pine nuts.</p>
+            <span class="price">$16</span>
+          </div>
+          <div class="menu-item">
+            <h3>Lemon Ricotta Gnocchi</h3>
+            <p>Brown butter, sage, pecorino, confit lemon zest.</p>
+            <span class="price">$24</span>
+          </div>
+          <div class="menu-item">
+            <h3>Seared Scallops</h3>
+            <p>Sweetcorn velouté, crispy pancetta, chive oil.</p>
+            <span class="price">$32</span>
+          </div>
+          <div class="menu-item">
+            <h3>Dark Chocolate Marquise</h3>
+            <p>Salted caramel, cocoa nibs, crème fraîche.</p>
+            <span class="price">$14</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section section-alt">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="images/37100a2a-cd8e-4347-b50d-3cb14e501d18.jfif" alt="Plated dish 1" />
+          <img src="Images/9babdef7-e415-4c7b-a376-73de51b3ace8.jfif" alt="Plated dish 2" />
+          <img src="images/74d26c30-7e54-4fc4-8dbb-edeb20e74f16.jfif" alt="Plated dish 3" />
+          <img src="images/Master the art of making this creamy….jfif" alt="Plated dish 4" />
+          <img src="images/Feast your eyes on this smoky BBQ meat platter….jfif" alt="Plated dish 5" />
+          <img src="images/74d26c30-7e54-4fc4-8dbb-edeb20e74f16.jfif" alt="Plated dish 6" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Testimonials -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience & Testimonials</h2>
+        <div class="grid-2">
+          <div class="stack">
+            <h3>Experience</h3>
+            <ul class="timeline">
+              <li>
+                <span class="when">2022—Present</span>
+                <span class="what"><strong>Head Chef</strong> — Atelier</span>
+              </li>
+              <li>
+                <span class="when">2019—2022</span>
+                <span class="what"
